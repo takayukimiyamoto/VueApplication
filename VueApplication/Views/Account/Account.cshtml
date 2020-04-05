@@ -1,0 +1,18 @@
+﻿
+@{
+    ViewData["Title"] = "Account";
+}
+@model VueApplication.Models.Account
+
+<div class="text-center" id="account">
+    <h1>Account</h1>
+    <p v-cloak>{{ items.id }}</p>
+    <p v-cloak>{{ items.name }}</p>
+    <p v-cloak>{{ items.number }}</p>
+    <p v-cloak>{{ items.date }}</p>
+</div>
+
+<script>
+    const accountModel = @Json.Serialize(Model);
+</script>
+<script src="~/js/account.js"></script>
